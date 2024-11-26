@@ -1,0 +1,257 @@
+<html lang=eng>
+
+<head>
+    <title> Assignment 2 </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="asg2_script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <img class="logo-button" src="images/logo.png" />
+            <span>F1 Race/Circuit Tracker</span>
+            <ul class="races">
+                <li class="home-button">Home</li>
+                <li class="favorite-button">Favorites</li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="home view">
+            <div class="home-desc">
+                <ul class="season-select">
+                    <li>Pick a season you want to look at!: </li>
+                    <li>
+                        <select id="home-select">
+                            <option value="default">Select</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </li>
+                    <li>
+                        <div class="loader"></div>
+                    </li>
+                </ul>
+                <p class="desc">
+                    This site tracks and logs the result of circuits.
+                    You can also 'like' your favorite driver or constructor to better keep track of them!
+                </p>
+
+                <p class="home-metadata">
+                    Created by: Anthony Tran. <br>
+                    GitHub:
+                </p>
+
+            </div>
+
+            <div class="home-picture">
+                <img src="images/max-rb20.jpg" />
+                <br>
+                <a
+                    href="https://old.reddit.com/r/F1Porn/comments/1gyw133/max_verstappen_rb20_at_brazilian_gp_2024_945x2048/">Source</a>
+            </div>
+        </section>
+
+        <section class="races race-view">
+            <div class="races list races-list">
+                <table>
+                    <caption>Races</caption>
+                    <tr class="row-header">
+                        <th class="races-list-round races-list-header-round race-round">Round</th>
+                        <th class="races-list-header-name">Name</th>
+                        <th class="races-list-header-button"></th>
+                    </tr>
+                    <tr>
+                        <td class="races-list-round">1</td>
+                        <td>Alfredasdasd</td>
+                        <td><span class="results-click">Result</span></td>
+                    </tr>
+                    <tr>
+                        <td class="races-list-round">2</td>
+                        <td>Alfred</td>
+                        <td><span class="results-click">Result</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="race-qualifying-results">
+                <div class="race-metadata">
+                    <span id="race-name"> Race Name </span>
+                    <span id="circuit-name"> Circuit Name </span>
+                    <span id="round-number"> Round 5 </span>
+                    <span id="race-date"> 1/1/2000 </span>
+                    <span id="race-url"> <a hred="#">wiki</a> </span>
+                </div>
+
+                <div class="race-content">
+                    <div class="race-qualifying">
+                        <table>
+                            <caption>Qualifying</caption>
+                            <tr class="row-header">
+                                <th class="qualifying list qualifying-pos">Pos</th>
+                                <th class="qualifying-name">Name</th>
+                                <th class="qualifying-constructor">Constructor</th>
+                                <th class="qualifying-q1">Q1</th>
+                                <th class="qualifying-q2">Q2</th>
+                                <th class="qualifying-q3">Q3</th>
+                            </tr>
+                            <tr class="races-list-qualifying">
+                                <td>1</td>
+                                <td>Alfredasdasd</td>
+                                <td><span class="results-click">Result</span></td>
+                            </tr>
+                            <tr class="races-list-qualifying">
+                                <td>2</td>
+                                <td>Alfred</td>
+                                <td><span class="results-click">Result</span></td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="race-results">
+                        <h2 class="race-results-title">Results</h2>
+                        <ul>
+                            <li class="race-result-1 podium"></li>
+                            <li class="race-result-2 podium"></li>
+                            <li class="race-result-3 podium"></li>
+                        </ul>
+                        <div class="result-table-container">
+                            <table>
+                                <tr class="row-header">
+                                    <th class="qualifying list results-pos">Pos</th>
+                                    <th class="results-name">Name</th>
+                                    <th class="results-constructor">Constructor</th>
+                                    <th class="results-laps">Laps</th>
+                                    <th class="results-pts">Pts</th>
+                                </tr>
+                                <tr class="races-list-qualifying">
+                                    <td>1</td>
+                                    <td>Alfredasdasd</td>
+                                    <td><span class="results-click">Result</span></td>
+                                </tr>
+                                <tr class="races-list-qualifying">
+                                    <td>2</td>
+                                    <td>Alfred</td>
+                                    <td><span class="results-click">Result</span></td>
+                                </tr>
+                                <tr class="races-list-qualifying">
+                                    <td>2</td>
+                                    <td>Alfred</td>
+                                    <td><span class="results-click">Result</span></td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <dialog class="popup constructor-popup">
+            <div class="details">
+                <h1 class="constructor-header">Constructor Details</h1>
+                <span class="constructor-popup-name">Name</span> <button autofocus
+                    class="constructor-popup-fav add-fav">Add Favorite</button><br>
+                <span class="constructor-popup-country">Country</span>
+                <span class="constructor-popup-url"><a href="#">wiki</a></span>
+
+            </div>
+
+
+            <table>
+                <caption> Race Results</caption>
+                <tr>
+                    <th>Round</th>
+                    <th>Name</th>
+                    <th>Driver</th>
+                    <th>Position</th>
+                </tr>
+
+            </table>
+            <button autofocus class="constructor-popup-close">Close</button>
+        </dialog>
+
+        <dialog class="driver-popup">
+            <div class="details">
+                <h1 class="driver-header">Driver Details</h1>
+                <span class="driver-name">Name</span> <br>
+                <span class="driver-country">Country</span> <button autofocus class="driver-popup-fav add-fav">Add
+                    Favorite</button><br>
+                <span class="driver-dob">Date of Birth <span class="age">(age)</span></span>
+                <span class="driver-popup-url"><a href="#">wiki</a></span>
+                <img>
+            </div>
+
+            <table>
+                <caption> Race Results</caption>
+                <tr>
+                    <th>Round</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Points</th>
+                </tr>
+            </table>
+            <button autofocus class="driver-popup-close">Close</button>
+        </dialog>
+
+
+        <dialog class="circuit-popup">
+            <div class="details">
+                <span class="circuit-popup-name">Name</span> <br>
+                <span class="circuit-popup-location">Country</span> <br>
+                <span class="circuit-popup-url"><a href="#">wiki</a> </span> <br>
+                <div class="container">
+                    <div class="circuit-img">image</div>
+                    <button autofocus class="circuit-popup-fav add-fav">Add Favorite</button>
+                </div>
+
+            </div>
+
+            <button autofocus class="circuit-popup-close">Close</button>
+        </dialog>
+
+
+        <dialog class="favorites-popup">
+            <div class="fav-top">
+                <h1>Favorites</h1>
+                <button class="fav-empty-button">Clear Favorites</button>
+            </div>
+
+            <div class="fav-lists">
+                <div class="fav-drivers-list fav-list">
+                    <h2>Drivers</h2>
+                    <div class="list-container"></div>
+                </div>
+                <div class="fav-constructors-list fav-list">
+                    <h2>Constructors</h2>
+                    <div class="list-container"></div>
+                </div>
+                <div class="fav-circuits-list fav-list">
+                    <h2>Circuits</h2>
+                    <div class="list-container"></div>
+                </div>
+            </div>
+            <button autofocus class="favorites-popup-close">Close</button>
+        </dialog>
+
+
+
+        <div id="snackbar">Successfully added to favorites</div>
+    </main>
+</body>
+
+</html>
