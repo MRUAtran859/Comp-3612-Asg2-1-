@@ -227,6 +227,7 @@ td{
     display: none;
     background-color: #8b9b9b;
     width: 85%;
+    height:100%
 }
 
 #race-name{
@@ -278,6 +279,7 @@ caption{
     flex-direction: column;
     justify-content: center;
     overflow-y: auto;
+    height:40%
 }
 
 .race-results > h2{
@@ -294,6 +296,10 @@ caption{
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+.race-list{
+    overflow-y: scroll;
 }
 
 .dialog[open] {
@@ -380,7 +386,7 @@ caption{
 
 .race-content > .race-qualifying{
     width:500;
-    height: 700;
+    height: 80%;
     overflow-y: scroll;
 }
 
@@ -415,10 +421,15 @@ caption{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 500;
+    height: 330px;
 }
 
 .pick-text{
     justify-content: center;
     align-items: center;
+}
+
+.races-list {
+    overflow-y: scroll;
+    height:790px;
 }
