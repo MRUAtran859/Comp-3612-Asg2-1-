@@ -610,8 +610,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             return;
         }
         document.querySelector(".race-view").dataset.year = year;
-        addEventListenersToRaceHeaders()
         displayRaceView(year);
+        addEventListenersToRaceHeaders()
         return;
     })
 })

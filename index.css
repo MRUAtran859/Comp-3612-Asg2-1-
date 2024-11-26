@@ -417,3 +417,8 @@ caption{
     overflow-y: scroll;
     height: 500;
 }
+
+.pick-text{
+    justify-content: center;
+    align-items: center;
+}
